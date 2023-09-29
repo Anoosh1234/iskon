@@ -1,0 +1,653 @@
+html{
+    height: 100%;
+}html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 8rem;
+    height: 100%;
+  margin: 0;
+  padding: 0;
+    
+}
+*{
+  font-family: 'Rubik', sans-serif;
+  margin: 0; padding: 0;
+  box-sizing: border-box;
+  outline: none; border: none;
+  text-decoration: none;
+  transition: .2s linear;
+  text-transform: capitalize;
+
+}
+
+body {
+  height: 100%;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom left, #00ccff 0%, #ff9933 100%);
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 8rem;
+  }
+  
+  body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom left, #00ccff 0%, #ff9933 100%);
+    opacity: 0.85; /* Adjust the opacity to control the color intensity */
+  }
+  
+  body::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("https://c4.wallpaperflare.com/wallpaper/661/37/264/god-lord-krishna-wallpaper-preview.jpg" );
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1; /* Place the image behind the content */
+  }
+  
+  /* Header Styles */
+.unique-header {
+    position: relative; /* Add this */
+    background-image: url(""); /* Replace with your header background image */
+    background-size: cover;
+    background-position: center;
+    color: #d2e2e7;
+    text-align: center;
+    padding: 200px 0;
+    padding-top: 130px;
+  }
+  
+  .header-content {
+    position: relative; /* Add this */
+    z-index: 2; /* Add this */
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background overlay */
+    border-radius: 30px;
+  }
+  header, section {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Adjust the margin or padding if necessary */
+  .header-content {
+    padding: 20px; /* Adjust this value as needed */
+  }
+  
+  /* Add this CSS to eliminate margin collapsing (if needed) */
+  header::after, section::before {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  .unique-header h1 {
+    font-size: 36px;
+    margin: 0;
+  }
+  
+  .unique-header p {
+    font-size: 18px;
+    margin-top: 10px;
+  }
+  
+  .cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 15px;
+    background-color: #ff9933;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background-color: #ff6600;
+  }
+  .hara{
+    color: black;
+    font-size: larger;
+    margin-top: 70px;
+  }
+ 
+  .container {
+    position: relative;
+    display: inline-block; /* Make sure the container only takes the necessary space */
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Make the overlay cover the container */
+    height: 100%; /* Make the overlay cover the container */
+    background: linear-gradient(to bottom left, #00ccff 0%, #ff9933 100%);
+    opacity: 0.01; /* Adjust the opacity as needed */
+    z-index: 1; /* Place the overlay above the background image */
+  }
+
+  .section1 {
+    padding-left: 35px;
+    display: flex;
+  justify-content: center; /* Horizontally center */
+  align-items: center; /* Vertically center */
+  height: 100vh;
+  }
+  
+  .container{
+    float: right;
+    width: 30%;
+  }
+.container img{
+  opacity: 0.7;
+  border: 2px solid transparent;
+  box-shadow: 16px 14px 20px #0000008c;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: border-animation 0.07s linear infinite;
+}
+  
+  .section1 h1{
+  
+  font-size: 40px;
+  align-items: center;
+  
+  }
+  span{
+    background: -webkit-linear-gradient(#ffbc04, #040404);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 50px;
+    text-align: center;
+  }
+  .unique-header h1{
+    background: -webkit-linear-gradient(#F5BD02, #c5c8b7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  section h1{
+    background: -webkit-linear-gradient(#b56060,#1b4332);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+
+  .AboutProfile{
+    box-shadow: 16px 14px 20px #0000008c;
+  border-radius: 5px;
+  position: relative;
+  
+  display:grid;
+  align-items: center;
+  justify-content: center;
+  }
+
+  .about-section{
+    margin: 100px;
+    height: 100vh;
+  }
+
+  .profile video{
+    width: fit-content;
+    border: 2px solid transparent;
+  box-shadow: 16px 14px 20px #0000008c;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  }
+.about1{
+  border: 3px solid transparent;
+  box-shadow: 16px 14px 20px #0000008c;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+ 
+  align-items: center;
+  justify-content: center;
+}
+  
+ /* Center the "ABOUT" heading horizontally on the same line */
+.about-heading {
+  text-align: center; 
+  margin-bottom:100%;
+  margin: 0;
+   /* Adjust this margin as needed */
+}
+
+/* Style the "ABOUT" heading */
+.about-heading h1 {
+  display: inline-block;
+  background: -webkit-linear-gradient(#b56060,#1b4332);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 40px;
+}
+
+.image1 {
+ float: left;
+}
+
+.about{
+ margin: 100px 100px;
+  padding: 30px;
+}
+
+.about p{
+  font-size: 22px;
+}
+.about span{
+  font-size: 22px;
+}
+
+<style>
+/* CSS for alternating sections */
+.alternating-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.left-content {
+  flex: 1;
+  width: 70%;
+  text-align: center;
+}
+
+.right-content {
+  flex: 1;
+  width: 30%;
+  text-align: center;
+}
+
+.right-content img {
+  max-width: 100%;
+  height: auto;
+}
+
+.main {
+  margin: 100px;
+}
+.custom-image img{
+  border-radius: 40px;
+  width: 500px;
+  height: 500px;
+  box-shadow: #000000;
+  opacity: 0.753;
+}
+
+
+.custom-text h6{
+  font-size: 20px;
+  background: -webkit-linear-gradient(#000000, #ec0606);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color:#ffffff;
+  opacity: 1.5;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Add styles for the alternating sections as needed */
+.alternating-section:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+/* CSS for the alternating sections with 60% text and 40% image */
+.custom-section {
+  display: flex;
+  justify-content: ;
+  align-items: center;
+  padding: 20px;
+}
+
+.custom-section .custom-text {
+  flex: 1;
+  width: 60%;
+  text-align: center;
+}
+
+.custom-section .custom-image {
+  flex: 1;
+  width: 40%;
+  text-align: center;
+}
+
+.custom-section .custom-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.custom-text{
+  width: 150px; height: 175px;
+  border: 2px solid transparent;
+  box-shadow: 16px 14px 20px #0000008c;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.custom-image{
+  width: 1450px; height: 350px;
+  border: 2px solid transparent;
+  box-shadow: 16px 14px 20px #0000008c;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: border-animation 1s linear infinite;
+
+}
+
+.custom-image1{
+  width: fit-content;
+  border: 2px solid transparent;
+  box-shadow: 16px 14px 20px #0000008c;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: border-animation1 0.08s linear infinite;
+  opacity: 0.75;
+
+}
+
+.custom-image1 img{
+  height: 750px;
+  width: 600px;
+}
+
+
+.custom-image img{
+   width: fit-content;
+  opacity: 0.79;
+}
+
+
+footer {
+  text-align: center;
+  padding: 20px;
+}
+
+.social-icons a {
+  color: #333; /* Change the color to your preference */
+  font-size: 24px; /* Adjust the size as needed */
+  margin: 0 10px; /* Adjust spacing between icons */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #007BFF; /* Change the color on hover to your preference */
+}
+
+.footer{
+text-decoration: none;
+box-shadow: 10px 16px 5px solid #000000;
+border-radius: 30px;
+margin: 15px;
+justify-content: space-between;
+}
+
+.footer p{
+  font-size:  20px;
+  color: #d2e2e7;
+
+}
+
+.footer a{
+  font-size: 20px;
+  margin: 20px;
+  transition: ease 3s;
+  color: #333;
+  text-transform: lowercase;
+}
+.footer a:hover{
+  color: #9ab4bd;
+}
+
+
+
+
+
+@keyframes border-animation {
+  0% {
+    border-image-source: conic-gradient(#05c0ff 20deg, transparent 360deg);
+    border-image-slice: 1;
+    border-image-width: 4px;
+    border-image-outset: 22px;
+  }
+  
+}
+
+@keyframes border-animation1 {
+  0% {
+    border-image-source: conic-gradient(#ffe601 20deg, transparent 360deg);
+    border-image-slice: 1;
+    border-image-width: 4px;
+    border-image-outset: 22px;
+  }
+  
+}
+
+
+
+
+ @media (max-width: 768px) {
+            /* Adjust styles for smaller screens */
+            .unique-header {
+                padding: 120px 0;
+            }
+
+            .header-content {
+                padding: 10px;
+            }
+
+            .hara {
+                font-size: medium;
+                margin-top: 30px;
+            }
+
+            .container {
+                width: 100%;
+            }
+
+            .overlay {
+                opacity: 0.5;
+            }
+
+            .section1 {
+                padding: 10px;
+                font-size: 10px;
+            }
+
+            .container {
+                width: 50%;
+                float: none;
+            }
+
+            .about {
+                margin: 30px 10px;
+                padding: 10px;
+            }
+
+            .about p, .about span {
+                font-size: 18px;
+            }
+
+            .about-section {
+                margin: 30px;
+            }
+
+            .about-heading h1 {
+                font-size: 30px;
+            }
+          }
+
+@media (max-width: 428px){
+  .section1{
+    font-size: 10px;
+  }
+   img{
+    width: 100px;
+    height: 150px;
+  }
+} 
+
+@media (max-width: 750px) {
+  /* Adjust styles for screens up to 750px wide */
+
+  body {
+    scroll-padding-top: 5rem; /* Reduce the top padding for smaller screens */
+  }
+
+  .header-content {
+    padding: 10px;
+  }
+
+  .hara {
+    font-size: medium;
+    margin-top: 30px;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  .overlay {
+    opacity: 0.5;
+  }
+
+  .section1 {
+    padding: 10px;
+  }
+
+  .container img {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  .about {
+    margin: 30px 10px;
+    padding: 10px;
+  }
+
+  .about p,
+  .about span {
+    font-size: 18px;
+  }
+
+  .about-section {
+    margin: 30px;
+  }
+
+  .about-heading h1 {
+    font-size: 30px;
+  }
+}
+
+
+
+@media (max-width: 450px) {
+  /* Adjust styles for screens up to 450px wide */
+
+  .section1 {
+    font-size: 10px;
+  }
+
+  .main{
+    margin: 5px;
+
+  }
+
+  .container img {
+    width: 100px;
+    height: 150px;
+  }
+
+
+  .custom-section {
+    display: flex;
+    justify-content: ;
+    align-items:end;
+    padding: 30px;
+  }
+  
+  .custom-section .custom-text {
+    flex: 1;
+    width: 60%;
+    text-align: center;
+  }
+  
+  .custom-section .custom-image {
+    flex: 1;
+    max-height: 50%;
+    text-align: center;
+    max-width: fit-content;
+  }
+  
+  .custom-section .custom-image img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .custom-text{
+    width: fit-content;
+    height: fit-content;
+    border: 2px solid transparent;
+    box-shadow: 16px 14px 20px #0000008c;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    font-size: 2px;
+  }
+
+  .custom-text h6{
+    font-size: 13px;
+  }
+  .custom-image{
+    width: fit-content;
+    height: fit-content;
+    border: 2px solid transparent;
+    box-shadow: 16px 14px 20px #0000008c;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: border-animation 1s linear infinite;
+  
+  }
+}
+
+        
